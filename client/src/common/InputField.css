@@ -1,0 +1,121 @@
+.input__container {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5vmax;
+    height: 2vh;
+    background-color: rgb(0, 255, 157);
+}
+
+.input__container__label {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    width: 10vw;
+    padding: 1vmax;
+    background-color: yellow;
+    border: 2px solid black;
+    text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255),
+        0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.582);
+}
+
+.input__container__inputSection {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input__container__inputSection div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5vmax;
+    font-size: 1.5vmax;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 255, 157);
+    border-radius: 50%;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    padding: 0.5vmax;
+    color: rgb(0, 255, 157);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+input {
+    margin: 0 2vmax;
+    padding: 1vmax;
+    border: 2px solid black;
+
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.582);
+}
+
+input:focus {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.582);
+}
+
+@media only screen and (min-device-width: 100px) and (max-device-width: 480px) and (orientation: portrait) {
+    .input__container div {
+        font-size: 3vmax !important;
+    }
+
+    .input__container__label {
+        width: 25vw !important;
+        font-size: 3vmax !important;
+    }
+
+    .input__container__inputSection {
+        width: 60vw !important;
+    }
+
+    .input__container__inputSection div {
+        width: 3vmax !important;
+
+        height: 3vmax !important;
+        padding: 1vmax !important;
+    }
+
+    input {
+        width: 40vw !important;
+        height: 5vh !important;
+        font-size: 3vmax !important;
+    }
+}
+
+@media only screen and (min-device-width: 273px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .input__container {
+        height: 5vh !important;
+        margin: 2vmax !important;
+    }
+
+    .input__container div {
+        font-size: 3vmax !important;
+    }
+
+    .input__container__label {
+        width: 30vw !important;
+        font-size: 3vmax !important;
+    }
+
+    .input__container__inputSection {
+        width: 40vw !important;
+    }
+
+    .input__container__inputSection div {
+        width: 3vmax !important;
+
+        height: 3vmax !important;
+        padding: 1vmax !important;
+    }
+
+    input {
+        width: 30vw !important;
+        height: 5vh !important;
+        font-size: 3vmax !important;
+        text-align: center;
+    }
+}

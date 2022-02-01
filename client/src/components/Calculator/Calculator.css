@@ -1,0 +1,181 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.calculator h1 {
+    font-family: 'Tourney', cursive;
+    text-align: center;
+    font-size: 3vmax;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255),
+        0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255);
+}
+
+.calculator__midsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 1vh;
+    padding: 1vmax 0;
+    border: 20px solid rgb(0, 255, 157);
+    background-image: linear-gradient(
+        225deg,
+        #073d36 0%,
+        #09665a 50%,
+        #073d36 100%
+    );
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.582);
+}
+
+.calculator__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    padding: 0.5vmax;
+    margin: 2vmax;
+    background-color: white;
+    color: black;
+}
+
+.calculator__button:hover {
+    background-color: rgb(0, 255, 157);
+    cursor: pointer;
+}
+
+.calculator__total {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2vmax;
+    height: 2vmax;
+    font-family: 'Tourney', cursive;
+    letter-spacing: 1px;
+    color: white;
+    width: 15vmax;
+}
+.calculator__total__head {
+    width: 7vmax;
+}
+
+.calculator__total span {
+    padding: 0 1vmax;
+    border-radius: 1vh;
+    margin: 0 0.5vmax;
+    color: black;
+    text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255),
+        0 0 2px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+}
+
+#calculator__total--zero-price {
+    background-color: yellow;
+}
+
+#calculator__total--full-price {
+    background-color: rgb(0, 255, 157);
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.582);
+}
+
+.calculator__error {
+    color: red;
+    border: 2px solid red;
+    padding: 0.5vmax;
+    margin: 2vmax;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#animate {
+    animation: rotate 0.3s linear;
+    color: yellow;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@media only screen and (min-device-width: 100px) and (max-device-width: 480px) and (orientation: portrait) {
+    .calculator {
+        width: 80vw !important;
+    }
+
+    .calculator h1 {
+        font-size: 4vmax !important;
+    }
+
+    .calculator__midsection {
+        width: 90vw !important;
+        border: 2px solid rgb(0, 255, 157);
+    }
+
+    .calculator__button,
+    .calculator__error {
+        height: 7vh !important;
+        padding: 1vmax !important;
+        font-size: 3vmax !important;
+        border-width: 1px !important;
+    }
+
+    .calculator__total {
+        display: flex;
+        align-items: center;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3vmax;
+        height: 3vmax;
+        width: 20vmax;
+    }
+
+    .calculator__total__head {
+        width: 12vmax;
+    }
+}
+
+@media only screen and (min-device-width: 273px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .calculator {
+        justify-content: flex-start !important;
+    }
+
+    .calculator h1 {
+        font-size: 4vmax !important;
+        margin: 0 0 1vmax 0 !important;
+    }
+    .calculator__midsection {
+        width: 80vw !important;
+        border: 2px solid rgb(0, 255, 157);
+    }
+
+    .calculator__button,
+    .calculator__error {
+        height: 10vh !important;
+        padding: 1vmax !important;
+        font-size: 3vmax !important;
+        border-width: 1px !important;
+    }
+
+    .calculator__total {
+        display: flex;
+        align-items: center;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3vmax;
+        height: 3vmax;
+        width: 20vmax;
+    }
+
+    .calculator__total__head {
+        width: 12vmax;
+    }
+}
